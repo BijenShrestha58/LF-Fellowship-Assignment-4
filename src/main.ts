@@ -8,7 +8,7 @@ class Carousel {
     private autoSlideTimeout: any;
   
     constructor() {
-      this.images = Array.from(document.querySelectorAll('.image'));
+      this.images = Array.prototype.slice.call(document.querySelectorAll('.image'));
       this.currentIndex = 2; 
       this.totalImages = this.images.length;
       this.prevButton = document.querySelector('.button:first-child')!;
