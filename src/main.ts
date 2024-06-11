@@ -73,13 +73,13 @@ class Carousel {
         } else if (index === (this.currentIndex - 2 + this.totalImages) % this.totalImages) {
           img.style.left = '25%';
           img.style.width = '25%';
-          img.style.zIndex = '';
+          img.style.zIndex = '0';
           img.style.opacity = '0.4';
           img.style.transform = 'translateX(-50%)';
         } else if (index === (this.currentIndex + 2) % this.totalImages) {
           img.style.left = '75%';
           img.style.width = '25%';
-          img.style.zIndex = '';
+          img.style.zIndex = '0';
           img.style.opacity = '0.4';
           img.style.transform = 'translateX(-50%)';
         } else {
