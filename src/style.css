@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  position: relative;
+}
+
+.container__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(9 / 16 * 500px);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 96px;
+}
+
+.image {
+  object-fit: cover;
+  width: 25%;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+  position: absolute;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+#image1,
+#image5 {
+  opacity: 0.4;
+  transform: translateX(-50%);
+}
+
+#image2,
+#image4 {
+  opacity: 0.9;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 35%;
+}
+
+#image1 {
+  left: 25%;
+}
+
+#image2 {
+  left: 35%;
+}
+
+#image3 {
+  left: 50%;
+  opacity: 1;
+  z-index: 2;
+  width: 45%;
+  transform: translateX(-50%);
+}
+
+#image4 {
+  left: 65%;
+}
+
+#image5 {
+  left: 75%;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.button {
+  border: none;
+  background-color: inherit;
+  color: gray;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  padding: 0;
+}
+
+.control {
+  list-style-type: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: grey;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.control.active {
+  background-color: black;
+}

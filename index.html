@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__image-wrapper">
+        <img
+          class="image"
+          id="image1"
+          src="assets/image1.jpg"
+          alt="Image"
+          data-index="1"
+        />
+        <img
+          class="image"
+          id="image2"
+          src="assets/image2.jpg"
+          alt="Image"
+          data-index="2"
+        />
+        <img
+          class="image"
+          id="image3"
+          src="assets/image3.jpg"
+          alt="Image"
+          data-index="3"
+        />
+        <img
+          class="image"
+          id="image4"
+          src="assets/image4.jpg"
+          alt="Image"
+          data-index="4"
+        />
+        <img
+          class="image"
+          id="image5"
+          src="assets/image5.jpg"
+          alt="Image"
+          data-index="5"
+        />
+      </div>
+      <div class="controls-container">
+        <button class="button material-symbols-outlined">arrow_back</button>
+        <ul class="controls">
+          <li class="control"></li>
+          <li class="control"></li>
+          <li class="control"></li>
+          <li class="control"></li>
+          <li class="control"></li>
+        </ul>
+        <button class="button material-symbols-outlined">arrow_forward</button>
+      </div>
+    </div>
+    <script src="src/main.ts"></script>
+  </body>
+</html>
